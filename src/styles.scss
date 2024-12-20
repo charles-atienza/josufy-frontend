@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+// Set global
+body,
+html {
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; // Default weight
+}
+
+:root {
+  --font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; // Default weight
+}
+
+// Global font classes for Lexend
+.lexend-light {
+  font-weight: 300; // Light weight
+}
+
+.lexend-bold {
+  font-weight: 700; // Bold weight
+}
