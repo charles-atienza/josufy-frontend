@@ -2,6 +2,7 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 // Set global
 body,
@@ -25,3 +26,6 @@ html {
 .lexend-bold {
   font-weight: 700; // Bold weight
 }
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";

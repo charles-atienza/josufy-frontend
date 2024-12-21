@@ -1,17 +1,17 @@
-<p-toolbar class="no-padding navbar">
-  <div class="p-toolbar-group-start">
+<p-toolbar [style]="{ padding: 0, 'min-height': '70px' }">
+  <div class="ms-2 p-toolbar-group-start">
     <!--img is logo, create a text which is aligned center on the right side of img-->
     <button class="logo-button" (click)="navigateHome()">
       <img src="basic-difficulty.png" class="logo" />
     </button>
-    <div class="align-center-span">
-      <span class="ml-5">Josufy</span>
+    <div class="ms-1 align-center-span">
+      <span>Josufy</span>
       <span>Tactical Warfare</span>
     </div>
   </div>
-  <div class="p-toolbar-group-end">
+  <div class="me-2 p-toolbar-group-end">
     <div class="align-center-span">
-      <span class="mr-5">UserName</span>
+      <span class="me-2">UserName</span>
     </div>
     <p-avatar image="basic-difficulty.png" shape="square" />
   </div>
