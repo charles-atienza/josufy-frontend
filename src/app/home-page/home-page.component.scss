@@ -1,3 +1,22 @@
 :host {
   display: block;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Content container styling */
+.content-container {
+  margin-left: 250px; /* Leaves space for the fixed sidenav */
+  padding: 20px;
+  /* The height of this area is independent of sidenav and navbar */
+}
+
+/* Utility for Bootstrap classes */
+.main-layout {
+  display: block;
+  overflow: auto;
+}
