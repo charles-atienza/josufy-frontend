@@ -47,3 +47,12 @@
   max-width: 180px;
   cursor: pointer;
 }
+
+.card:focus {
+  outline: 2px solid #007bff !important; /* Add a focus outline */
+  outline-offset: 2px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
