@@ -6,8 +6,7 @@
 .sidenav-container {
   width: 200px; /* Fixed width for the sidenav */
   position: fixed; /* Fixes the sidenav in place */
-  top: 70px; /* Adjust to match the navbar height */
-  bottom: 0;
+  height: 100%;
   overflow-y: auto; /* Makes it scrollable if the content overflows */
   border-right: 1px solid #e5e7eb; /* Adds a border to the right */
 }

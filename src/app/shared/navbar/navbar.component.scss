@@ -21,17 +21,6 @@ router-outlet {
   justify-content: center;
 }
 
-.navbar {
-  height: 70px;
-  max-height: 70px;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  z-index: 1000;
-}
-
 .logo-button {
   background: none;
   border: none;

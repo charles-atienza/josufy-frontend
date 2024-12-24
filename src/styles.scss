@@ -7,13 +7,13 @@
 // Set global
 body,
 html {
-  font-family: "Lexend", serif;
+  font-family: "Lexend", serif !important;
   font-optical-sizing: auto;
   font-weight: 400; // Default weight
 }
 
 :root {
-  --font-family: "Lexend", serif;
+  --font-family: "Lexend", serif !important;
   font-optical-sizing: auto;
   font-weight: 400; // Default weight
 }
@@ -25,6 +25,15 @@ html {
 
 .lexend-bold {
   font-weight: 700; // Bold weight
+}
+
+.p-component, /* Applies to all PrimeNG components */
+.p-button,
+.p-inputtext,
+.p-datatable,
+.p-dialog,
+.p-toast {
+  font-family: "Lexend", serif !important; // Force override
 }
 
 /* Importing Bootstrap SCSS file. */
