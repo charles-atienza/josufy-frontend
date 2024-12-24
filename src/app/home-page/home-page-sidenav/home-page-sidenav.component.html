@@ -1,18 +1,24 @@
-<div class="sidenav-container bg-light" [style.top.px]="sidenavTop">
-  <div class="mx-auto grid p-1 sidenav-contents">
-    <app-card-button
-      title="Play with friend"
-      [isComingSoon]="true"
-      [logoURI]="difficultyImagePath.BASIC"
-    ></app-card-button>
-    <app-card-button
-      title="Play with AI"
-      [isComingSoon]="true"
-      [logoURI]="difficultyImagePath.BASIC"
-    ></app-card-button>
-    <app-card-button
-      title="Puzzle"
-      [logoURI]="difficultyImagePath.BASIC"
-    ></app-card-button>
+<div class="container bg-light" [style.top.px]="sidenavTop">
+  <div class="grid contents p-2">
+    <div class="g-col-12">
+      <app-card-button
+        title="Play with friend"
+        [isComingSoon]="true"
+        [logoURI]="playImagePath.PLAY_WITH_FRIEND"
+      ></app-card-button>
+    </div>
+    <div class="g-col-12">
+      <app-card-button
+        title="Play with AI"
+        [isComingSoon]="true"
+        [logoURI]="playImagePath.PLAY_WITH_AI"
+      ></app-card-button>
+    </div>
+    <div class="g-col-12">
+      <app-card-button
+        title="Puzzle"
+        [logoURI]="playImagePath.PUZZLE"
+      ></app-card-button>
+    </div>
   </div>
 </div>

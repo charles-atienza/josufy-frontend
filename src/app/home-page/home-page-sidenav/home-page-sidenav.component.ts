@@ -4,7 +4,7 @@ import {
   HostListener,
 } from "@angular/core";
 import { CardButtonComponent } from "../../shared/components/card-button/card-button.component";
-import { DifficultyImagePath } from "../../shared/enums/difficulty-image-path.enum";
+import { PlayImagePath } from "../../shared/enums/play-image-pathenum";
 
 @Component({
   selector: "app-home-page-sidenav",
@@ -15,7 +15,7 @@ import { DifficultyImagePath } from "../../shared/enums/difficulty-image-path.en
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePageSideNavComponent {
-  difficultyImagePath = DifficultyImagePath;
+  playImagePath = PlayImagePath;
   sidenavTop = 70; // Initial top value (matches navbar height)
 
   @HostListener("window:scroll", [])
