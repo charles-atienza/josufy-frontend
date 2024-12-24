@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+.coming-soon {
+  position: relative;
+  cursor: default;
+}
+
+.coming-soon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.coming-soon::after {
+  content: "COMING SOON";
+  text-transform: uppercase;
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg); /* Centers and rotates the text */
+  z-index: 2; /* Ensures the text is above the overlay */
+  width: 100%; /* Full width of the card */
+  height: 100%; /* Full height of the card */
+  background-color: transparent;
+  pointer-events: none; /* Prevents the pseudo-elements from blocking clicks */
+}
+
+.card {
+  max-width: 200px;
+  cursor: pointer;
+}
