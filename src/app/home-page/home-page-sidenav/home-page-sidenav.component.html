@@ -1,8 +1,18 @@
-<div class="sidenav-container bg-light p-3" [style.top.px]="sidenavTop">
-  <h5>Menu</h5>
-  <ul class="list-unstyled">
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="#">Reports</a></li>
-    <li><a href="#">Settings</a></li>
-  </ul>
+<div class="sidenav-container bg-light" [style.top.px]="sidenavTop">
+  <div class="mx-auto grid p-1 sidenav-contents">
+    <app-card-button
+      title="Play with friend"
+      [isComingSoon]="true"
+      [logoURI]="difficultyImagePath.BASIC"
+    ></app-card-button>
+    <app-card-button
+      title="Play with AI"
+      [isComingSoon]="true"
+      [logoURI]="difficultyImagePath.BASIC"
+    ></app-card-button>
+    <app-card-button
+      title="Puzzle"
+      [logoURI]="difficultyImagePath.BASIC"
+    ></app-card-button>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="card" style="width: 18rem" (click)="onClick()">
+<div class="card" style="width: 18rem" (click)="onCardClick($event)">
   <div [className]="isComingSoon ? 'coming-soon' : ''">
     <div class="p-3">
       <img [src]="logoURI" class="card-img-top" alt="..." />

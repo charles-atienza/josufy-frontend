@@ -11,3 +11,8 @@
   border-right: 1px solid #e5e7eb; /* Adds a border to the right */
   margin-right: 5px;
 }
+
+.sidenav-contents {
+  --bs-rows: 3;
+  --bs-columns: 1;
+}

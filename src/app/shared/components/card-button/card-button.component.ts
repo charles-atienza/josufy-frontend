@@ -13,9 +13,13 @@ import { CardModule } from "primeng/card";
 export class CardButtonComponent {
   @Input() isComingSoon: boolean = false;
   @Input() title: string = "No Title";
-  @Input() logoURI: string = "No Logo";
+  @Input() logoURI: string = "";
 
-  onClick() {
+  onCardClick($event: Event) {
+    if (this.isComingSoon) {
+      $event.preventDefault();
+      return;
+    }
     console.log("Button clicked");
   }
 }
