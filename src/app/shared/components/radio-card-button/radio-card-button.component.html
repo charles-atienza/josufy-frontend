@@ -1,0 +1,25 @@
+<div class="grid p-2">
+  <div
+    [class.g-col-12]="!isHorizontalSpread"
+    [class.g-col-2]="isHorizontalSpread"
+    *ngFor="let card of cardButtons; let i = index"
+  >
+    <div
+      class="card"
+      [class.selected]="card.isSelected"
+      [class.coming-soon]="card.isComingSoon"
+      style="width: 18rem"
+      (click)="onCardClick($event, i)"
+      [tabindex]="0"
+    >
+      <div>
+        <div class="p-3">
+          <img [src]="card.logoURI" class="card-img-top" alt="..." />
+        </div>
+        <div class="card-body text-center p-0 pb-1">
+          <p class="card-text fw-semibold text-uppercase">{{ card.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
