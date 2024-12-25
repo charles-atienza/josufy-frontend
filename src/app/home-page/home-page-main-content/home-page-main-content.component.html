@@ -1,31 +1,6 @@
-<!-- <div class="container">
-  <div class="grid contents">
-    <div class="g-col-3">
-      <app-card-button
-        title="BASIC"
-        [logoURI]="DifficultyImagePath.BASIC"
-      ></app-card-button>
-    </div>
-    <div class="g-col-3">
-      <app-card-button
-        title="Intermediate"
-        [isComingSoon]="true"
-        [logoURI]="DifficultyImagePath.INTERMEDIATE"
-      ></app-card-button>
-    </div>
-    <div class="g-col-3">
-      <app-card-button
-        title="Advanced"
-        [isComingSoon]="true"
-        [logoURI]="DifficultyImagePath.ADVANCED"
-      ></app-card-button>
-    </div>
-    <div class="g-col-3">
-      <app-card-button
-        title="???"
-        [isComingSoon]="true"
-        [logoURI]="DifficultyImagePath.RIP"
-      ></app-card-button>
-    </div>
-  </div>
-</div> -->
+<div class="container">
+  <app-card-button
+    [cardButtons]="cardButtons"
+    [isHorizontalSpread]="true"
+  ></app-card-button>
+</div>

@@ -14,6 +14,7 @@ import { CommonModule } from "@angular/common";
 })
 export class RadioCardButtonComponent {
   @Input() cardButtons: ICardButton[] = [];
+  @Input() isHorizontalSpread: boolean = false;
 
   onCardClick($event: Event, cardButtonIndex: number) {
     const selectedCardButtons = this.cardButtons[cardButtonIndex];

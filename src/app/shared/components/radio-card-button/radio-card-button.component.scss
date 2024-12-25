@@ -75,13 +75,3 @@
   opacity: 0.2;
   z-index: 1;
 }
-
-.card.selected::after {
-  content: "✔";
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-size: 1.5rem;
-  color: green;
-  z-index: 2;
-}
