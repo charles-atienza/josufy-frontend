@@ -10,12 +10,14 @@ body {
 
 /* Content container styling */
 .content-container {
-  margin-left: 220px; /* Leaves space for the fixed sidenav */
   /* The height of this area is independent of sidenav and navbar */
 }
 
-/* Utility for Bootstrap classes */
 .main-layout {
-  display: block;
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 220px auto;
+}
+
+.main-layout > app-home-page-sidenav {
+  flex: 0 0 220px; /* Fixed width for the sidebar */
 }

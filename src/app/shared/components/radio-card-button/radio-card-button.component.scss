@@ -1,8 +1,10 @@
 :host {
-  overflow-x: hidden;
   display: block;
 }
 
+.grid {
+  --bs-columns: 8;
+}
 .coming-soon {
   position: relative;
 }
