@@ -1,10 +1,10 @@
 :host {
+  overflow-x: hidden;
   display: block;
 }
 
 .coming-soon {
   position: relative;
-  cursor: default;
 }
 
 .coming-soon::before {
@@ -46,6 +46,7 @@
 .card {
   max-width: 180px;
   cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card:focus {
@@ -55,4 +56,32 @@
 
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card.selected {
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4); /* Pressed inset shadow */
+  transform: translateY(2px); /* Slight downward movement to emphasize press */
+}
+
+.card.selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.card.selected::after {
+  content: "✔";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.5rem;
+  color: green;
+  z-index: 2;
 }

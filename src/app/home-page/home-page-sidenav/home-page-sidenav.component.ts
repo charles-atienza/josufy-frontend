@@ -3,13 +3,14 @@ import {
   Component,
   HostListener,
 } from "@angular/core";
-import { CardButtonComponent } from "../../shared/components/card-button/card-button.component";
+import { RadioCardButtonComponent } from "../../shared/components/radio-card-button/radio-card-button.component";
 import { PlayImagePath } from "../../shared/enums/play-image-pathenum";
+import { ICardButton } from "../../shared/models/card-button.model";
 
 @Component({
   selector: "app-home-page-sidenav",
   standalone: true,
-  imports: [CardButtonComponent],
+  imports: [RadioCardButtonComponent],
   templateUrl: "./home-page-sidenav.component.html",
   styleUrl: "./home-page-sidenav.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -17,6 +18,27 @@ import { PlayImagePath } from "../../shared/enums/play-image-pathenum";
 export class HomePageSideNavComponent {
   playImagePath = PlayImagePath;
   sidenavTop = 70; // Initial top value (matches navbar height)
+  cardButtons: ICardButton[] = [
+    {
+      title: "Play with friend",
+      isComingSoon: true,
+      logoURI: this.playImagePath.PLAY_WITH_FRIEND,
+      onCardClick: () => {},
+    },
+    {
+      title: "Play with AI",
+      isComingSoon: true,
+      logoURI: this.playImagePath.PLAY_WITH_AI,
+      onCardClick: () => {},
+    },
+    {
+      title: "Puzzle",
+      isComingSoon: false,
+      logoURI: this.playImagePath.PUZZLE,
+      isSelected: true,
+      onCardClick: () => {},
+    },
+  ];
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
