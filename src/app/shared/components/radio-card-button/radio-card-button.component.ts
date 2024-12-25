@@ -16,7 +16,8 @@ export class RadioCardButtonComponent {
   @Input() cardButtons: ICardButton[] = [];
 
   onCardClick($event: Event, cardButtonIndex: number) {
-    if (this.cardButtons[cardButtonIndex].isComingSoon) {
+    const selectedCardButtons = this.cardButtons[cardButtonIndex];
+    if (selectedCardButtons.isComingSoon || selectedCardButtons.isSelected) {
       return;
     }
     this.cardButtons = this.cardButtons.map((button, index) => ({
