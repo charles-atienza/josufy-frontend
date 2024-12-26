@@ -16,25 +16,24 @@ import { ICardButton } from "../../shared/models/card-button.model";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePageSideNavComponent {
-  playImagePath = PlayImagePath;
   sidenavTop = 70; // Initial top value (matches navbar height)
   cardButtons: ICardButton[] = [
     {
       title: "Play with friend",
       isComingSoon: true,
-      logoURI: this.playImagePath.PLAY_WITH_FRIEND,
+      logoURI: PlayImagePath.PLAY_WITH_FRIEND,
       onClick: () => {},
     },
     {
       title: "Play with AI",
       isComingSoon: true,
-      logoURI: this.playImagePath.PLAY_WITH_AI,
+      logoURI: PlayImagePath.PLAY_WITH_AI,
       onClick: () => {},
     },
     {
       title: "Puzzle",
       isComingSoon: false,
-      logoURI: this.playImagePath.PUZZLE,
+      logoURI: PlayImagePath.PUZZLE,
       isSelected: true,
       onClick: () => {},
     },
