@@ -3,19 +3,19 @@ import {
   Component,
   HostListener,
 } from "@angular/core";
-import { RadioCardButtonComponent } from "../../shared/components/radio-card-button/radio-card-button.component";
-import { PlayImagePath } from "../../shared/enums/play-image-pathenum";
-import { ICardButton } from "../../shared/models/card-button.model";
+import { RadioCardButtonComponent } from "../../../shared/components/radio-card-button/radio-card-button.component";
+import { ICardButton } from "../../../shared/models/card-button.model";
+import { PlayImagePath } from "../../../shared/enums/play-image-pathenum";
 
 @Component({
   selector: "app-home-page-sidenav",
   standalone: true,
   imports: [RadioCardButtonComponent],
-  templateUrl: "./home-page-sidenav.component.html",
-  styleUrl: "./home-page-sidenav.component.scss",
+  templateUrl: "./mode-selection-sidenav.component.html",
+  styleUrl: "./mode-selection-sidenav.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomePageSideNavComponent {
+export class ModeSelectionSideNavComponent {
   sidenavTop = 70; // Initial top value (matches navbar height)
   cardButtons: ICardButton[] = [
     {
