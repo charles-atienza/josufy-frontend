@@ -12,31 +12,30 @@ import { ICardButton } from "../../shared/models/card-button.model";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePageMainContentComponent {
-  DifficultyImagePath = DifficultyImagePath;
   cardButtons: ICardButton[] = [
     {
       title: "Basic",
       isComingSoon: false,
       logoURI: DifficultyImagePath.BASIC,
-      onCardClick: () => {},
+      onClick: () => {},
     },
     {
       title: "Intermediate",
       isComingSoon: true,
       logoURI: DifficultyImagePath.INTERMEDIATE,
-      onCardClick: () => {},
+      onClick: () => {},
     },
     {
       title: "Advanced",
       isComingSoon: true,
       logoURI: DifficultyImagePath.ADVANCED,
-      onCardClick: () => {},
+      onClick: () => {},
     },
     {
       title: "???",
       isComingSoon: true,
       logoURI: DifficultyImagePath.RIP,
-      onCardClick: () => {},
+      onClick: () => {},
     },
   ];
 }

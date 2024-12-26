@@ -26,6 +26,6 @@ export class RadioCardButtonComponent {
       isSelected: index === cardButtonIndex,
     }));
 
-    this.cardButtons[cardButtonIndex].onCardClick($event);
+    this.cardButtons[cardButtonIndex].onClick($event);
   }
 }

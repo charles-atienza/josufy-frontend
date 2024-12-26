@@ -3,5 +3,5 @@ export interface ICardButton {
   title: string;
   logoURI: string;
   isSelected?: boolean;
-  onCardClick($event: Event): void;
+  onClick($event: Event): void;
 }

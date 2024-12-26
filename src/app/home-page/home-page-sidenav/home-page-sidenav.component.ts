@@ -23,20 +23,20 @@ export class HomePageSideNavComponent {
       title: "Play with friend",
       isComingSoon: true,
       logoURI: this.playImagePath.PLAY_WITH_FRIEND,
-      onCardClick: () => {},
+      onClick: () => {},
     },
     {
       title: "Play with AI",
       isComingSoon: true,
       logoURI: this.playImagePath.PLAY_WITH_AI,
-      onCardClick: () => {},
+      onClick: () => {},
     },
     {
       title: "Puzzle",
       isComingSoon: false,
       logoURI: this.playImagePath.PUZZLE,
       isSelected: true,
-      onCardClick: () => {},
+      onClick: () => {},
     },
   ];
 
