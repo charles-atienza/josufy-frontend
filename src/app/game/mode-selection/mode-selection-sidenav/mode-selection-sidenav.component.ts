@@ -8,7 +8,7 @@ import { ICardButton } from "../../../shared/models/card-button.model";
 import { PlayImagePath } from "../../../shared/enums/play-image-pathenum";
 
 @Component({
-  selector: "app-home-page-sidenav",
+  selector: "app-mode-selection-sidenav",
   standalone: true,
   imports: [RadioCardButtonComponent],
   templateUrl: "./mode-selection-sidenav.component.html",

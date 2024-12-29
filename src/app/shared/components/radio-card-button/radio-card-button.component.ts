@@ -5,7 +5,7 @@ import { ICardButton } from "../../models/card-button.model";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-card-button",
+  selector: "app-radio-card-button",
   standalone: true,
   imports: [CommonModule, CardModule, ButtonModule],
   templateUrl: "./radio-card-button.component.html",

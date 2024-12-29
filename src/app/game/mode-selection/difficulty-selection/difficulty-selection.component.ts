@@ -5,7 +5,7 @@ import { DifficultyImagePath } from "../../../shared/enums/difficulty-image-path
 import { Route, Router } from "@angular/router";
 
 @Component({
-  selector: "app-home-page-main-content",
+  selector: "app-difficulty-selection",
   standalone: true,
   imports: [RadioCardButtonComponent],
   templateUrl: "./difficulty-selection.component.html",
