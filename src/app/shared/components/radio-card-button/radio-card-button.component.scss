@@ -1,9 +1,14 @@
 :host {
   display: block;
+  max-width: 100%;
 }
 
-.grid {
-  --bs-columns: 8;
+.grid-self {
+  display: grid; /* Enable CSS Grid */
+  place-content: center center; /* Center the entire grid horizontally and vertically */
+  gap: var(--bs-gap, 1.5rem); /* Space between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
 }
 
 .card {
@@ -96,4 +101,9 @@
       cursor: not-allowed; /* Optional: Indicate that the card is not interactive */
     }
   }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
 }

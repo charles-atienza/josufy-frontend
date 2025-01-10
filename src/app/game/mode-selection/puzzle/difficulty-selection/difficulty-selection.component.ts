@@ -1,23 +1,28 @@
 import { ChangeDetectionStrategy, Component } from "@angular/core";
-import { DifficultyImagePath } from "../../../shared/enums/difficulty-image-path.enum";
-import { ICardButton } from "../../../shared/models/card-button.model";
-import { RadioCardButtonComponent } from "../../../shared/components/radio-card-button/radio-card-button.component";
+import { RadioCardButtonComponent } from "../../../../shared/components/radio-card-button/radio-card-button.component";
+import { Router } from "@angular/router";
+import { ICardButton } from "../../../../shared/models/card-button.model";
+import { DifficultyImagePath } from "../../../../shared/enums/difficulty-image-path.enum";
 
 @Component({
-  selector: "app-basic-page",
+  selector: "app-difficulty-selection",
   standalone: true,
   imports: [RadioCardButtonComponent],
-  templateUrl: "./basic-page.component.html",
-  styleUrl: "./basic-page.component.scss",
+  templateUrl: "./difficulty-selection.component.html",
+  styleUrl: "./difficulty-selection.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BasicPageComponent {
+export class DifficultySelectionComponent {
+  constructor(private router: Router) {}
+
   cardButtons: ICardButton[] = [
     {
       title: "Basic",
       isComingSoon: false,
       logoURI: DifficultyImagePath.BASIC,
-      onClick: () => {},
+      onClick: () => {
+        this.router.navigate(["basic"]);
+      },
     },
     {
       title: "Intermediate",

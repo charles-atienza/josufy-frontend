@@ -1,16 +1,13 @@
-<div class="grid p-2">
-  <div
-    [class.g-col-12]="!isHorizontalSpread"
-    [class.g-col-2]="isHorizontalSpread"
-    *ngFor="let card of cardButtons; let i = index"
-  >
+<div class="grid-self p-2">
+  <div *ngFor="let card of cardButtons; let i = index">
     <div
       class="card"
       [class.selected]="card.isSelected"
       [class.coming-soon]="card.isComingSoon"
       style="width: 18rem"
-      (click)="onCardClick($event, i)"
+      (click)="onCardClick(card, i)"
       [tabindex]="0"
+      [pTooltip]="card.description"
     >
       <div>
         <div class="p-3">

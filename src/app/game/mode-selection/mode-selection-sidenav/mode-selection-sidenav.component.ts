@@ -17,24 +17,28 @@ import { PlayImagePath } from "../../../shared/enums/play-image-pathenum";
 })
 export class ModeSelectionSideNavComponent {
   sidenavTop = 70; // Initial top value (matches navbar height)
+
   cardButtons: ICardButton[] = [
     {
       title: "Play with friend",
-      isComingSoon: true,
+      isComingSoon: false,
+      isSelectable: true,
+      isSelected: true,
       logoURI: PlayImagePath.PLAY_WITH_FRIEND,
       onClick: () => {},
     },
     {
       title: "Play with AI",
       isComingSoon: true,
+      isSelectable: true,
       logoURI: PlayImagePath.PLAY_WITH_AI,
       onClick: () => {},
     },
     {
       title: "Puzzle",
-      isComingSoon: false,
+      isComingSoon: true,
+      isSelectable: true,
       logoURI: PlayImagePath.PUZZLE,
-      isSelected: true,
       onClick: () => {},
     },
   ];

@@ -1,0 +1,36 @@
+<div class="container">
+  <app-radio-card-button
+    [cardButtons]="cardButtons"
+    [isHorizontalSpread]="true"
+  ></app-radio-card-button>
+</div>
+
+<p-dialog
+  header="Create Room"
+  [modal]="true"
+  [(visible)]="isShowCreateDialog"
+  [style]="{ width: '25rem' }"
+>
+  <div class="p-2">
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm"
+        >Display Name</span
+      >
+      <input
+        type="text"
+        class="form-control"
+        aria-label=""
+        aria-describedby="inputGroup-sizing-sm"
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <label class="input-group-text" for="gameMode">Game Mode</label>
+      <select class="form-select" id="gameMode" disabled>
+        <option selected>Tournament</option>
+      </select>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-outline-primary btn-sm">CREATE</button>
+  </div>
+</p-dialog>
