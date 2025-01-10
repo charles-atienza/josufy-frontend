@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Content container styling */
+.content-container {
+  flex-grow: 1;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 220px auto;
+  flex-wrap: nowrap;
+
+  > app-home-page-sidenav {
+    min-width: 220px; /* Prevents it from shrinking below 220px */
+  }
+}

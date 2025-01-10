@@ -1,0 +1,22 @@
+<div class="grid-self p-2">
+  <div *ngFor="let card of cardButtons; let i = index">
+    <div
+      class="card"
+      [class.selected]="card.isSelected"
+      [class.coming-soon]="card.isComingSoon"
+      style="width: 18rem"
+      (click)="onCardClick(card, i)"
+      [tabindex]="0"
+      [pTooltip]="card.description"
+    >
+      <div>
+        <div class="p-3">
+          <img [src]="card.logoURI" class="card-img-top" alt="..." />
+        </div>
+        <div class="card-body text-center p-0 pb-1">
+          <p class="card-text fw-semibold text-uppercase">{{ card.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

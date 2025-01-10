@@ -1,0 +1,15 @@
+<!-- Main Layout -->
+<div class="main-layout d-flex">
+  <!-- Sidenav -->
+  <app-mode-selection-sidenav></app-mode-selection-sidenav>
+
+  <!-- Content (Independent height) -->
+  <div class="content-container flex-grow-1 p-3">
+    <div class="container">
+      <app-radio-card-button
+        [cardButtons]="cardButtons"
+        [isHorizontalSpread]="true"
+      ></app-radio-card-button>
+    </div>
+  </div>
+</div>
